@@ -1,15 +1,9 @@
-# Facial-De-identification-in-Head-CT-scans
-Algorithm using image processing techniques
+# Cervical-Spine-Segmentation
+Segmentation of cervical spine using 3D Unet
 
-### Algorithm 
-Applied Gaussian blurring on skin pixels to get results as shown: <br />
-#### Actual Scan:
-![output](png/5.PNG) <br />
-#### After Blurring:
-![output](png/7.PNG) <br />
-<br />
-We get following results on 3D reconstruction:
-#### Original Scan:
-![output](png/6.PNG) <br />
-#### Result
-![output](png/8.PNG) <br />
+- Used Verse19 and Verse20 dataset for training and testing. 
+- Preprocesssing of data was done which includes:
+  - resampling to 1mm pixel spacing 
+  - re-orientation 
+- Trained 3D Unet for 200 epochs
+- Achieved 92% dice score.
